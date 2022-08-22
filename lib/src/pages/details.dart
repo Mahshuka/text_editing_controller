@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+class WelcomePage  extends StatelessWidget {
+
+String name,email,phone;
+WelcomePage({required this.name,required this.email,required this.phone});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          children: [
+            Text ('Name:${name}'),
+            Text ('Email :${email}'),
+            Text ('Phone :${phone}'),
+          ],
+        ),
+      ),
+    );
+  }
+}
