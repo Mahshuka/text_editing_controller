@@ -9,9 +9,12 @@ WelcomePage({required this.name,required this.email,required this.phone});
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text ('Name:${name}'),
+            SizedBox(height: 30,),
             Text ('Email :${email}'),
+            SizedBox(height: 30,),
             Text ('Phone :${phone}'),
           ],
         ),
